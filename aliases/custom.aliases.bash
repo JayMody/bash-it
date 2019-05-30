@@ -4,6 +4,6 @@ alias jupy='jupyter notebook'
 ##############################
 
 ############ TEMP ############
-alias mserv='ssh modyj@mserv.magarveylab.ca
+alias mserv='ssh modyj@mserv.magarveylab.ca'
 ##############################
 
