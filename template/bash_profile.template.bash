@@ -1,5 +1,18 @@
 #!/usr/bin/env bash
 
+######### LINK BASHRC ##########
+if [ -f $HOME/.bashrc ]; then
+        source $HOME/.bashrc
+fi
+################################
+
+####### Alternate Theme ########
+# export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
+# export CLICOLOR=1
+# export LSCOLORS=ExFxBxDxCxegedabagacad
+# alias ls='ls -Gph'
+################################
+
 # If not running interactively, don't do anything
 case $- in
   *i*) ;;
@@ -7,12 +20,12 @@ case $- in
 esac
 
 # Path to the bash it configuration
-export BASH_IT="{{BASH_IT}}"
+export BASH_IT="/Users/start/.bash_it"
 
 # Lock and Load a custom theme file.
 # Leave empty to disable theming.
 # location /.bash_it/themes/
-export BASH_IT_THEME='bakke'
+export BASH_IT_THEME='powerline-plain'
 
 # (Advanced): Change this to the name of your remote repo if you
 # cloned bash-it with a remote other than origin such as `bash-it`.
