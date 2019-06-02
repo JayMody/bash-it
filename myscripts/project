@@ -1,7 +1,18 @@
 #!/bin/bash
 
 if [ $# -eq 0 ]; then
-	echo "Command requires at least 1 argument [projectname]"
+	echo "Command requires at least 1 argument [projectname][github (g)]"
 else
-
+	mkdir $1
+	cd $1
+	touch README.md
+	touch .gitignore
+	printf "# $1\n### Author: Jay Mody\n---" > README.md
+	git init
+	git add .
+	git commit -m "initial commit"
+	open .
+	if [ "$2" == "g" ]; then
+		open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 9" --new-tab "https://github.com/new"
+	fi
 fi
