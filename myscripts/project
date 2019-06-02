@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]; then
+	echo "Command requires at least 1 argument [projectname]"
+else
+
+fi

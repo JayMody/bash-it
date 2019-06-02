@@ -2,10 +2,15 @@
 
 cd ~/.bash_it/myscripts
 
-if [ -f "$1" ]; then
-	printf "$1 script already exists"
+if [ $# -eq 0 ]; then
+	echo "Command requires at least 1 argument [filename]"
 else
-	touch $1
-	printf "#!/bin/bash" > $1
-	txt $1
+	if [ -f "$1" ]; then
+		echo "$1 script already exists"
+	else
+		touch $1
+		chmod 755 $1
+		echo "#!/bin/bash" > $1
+		txt $1
+	fi
 fi
