@@ -1,0 +1,11 @@
+#!/bin/bash
+
+cd ~/.bash_it/myscripts
+
+if [ -f "$1" ]; then
+	printf "$1 script already exists"
+else
+	touch $1
+	printf "#!/bin/bash" > $1
+	txt $1
+fi
