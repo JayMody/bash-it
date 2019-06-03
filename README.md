@@ -82,21 +82,17 @@ bash-it help plugins        # shows help for installed plugins
 ```
 
 # Custom Stuff
----
 ## Progs
 - sublime
 - anaconda
 - git
 - google chrome
 
----
 
 ## myscripts
 **txt:** Opens file with chosen text editor
 **nscript:** Creates a new script in the myscripts folder
 **hello_world:** A test script
-
----
 
 ## template
 
@@ -107,8 +103,6 @@ bash_profile.template.bash
 
 .bashrc
 - add myscripts to the path
-
----
 
 ## custom.aliases
 contians custom aliases
