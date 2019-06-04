@@ -1,6 +1,6 @@
 # Bash-it
 
-This repo is forked from [bash-it](https://github.com/Bash-it/bash-it). This version includes my own changes to everything from custom aliases, scripts, .bashrr, and much more.
+This repo is forked from [bash-it](https://github.com/Bash-it/bash-it). This version includes my own changes to everything from custom aliases, scripts, .bashrc, and much more.
 
 ## Installation
 
