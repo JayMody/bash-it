@@ -39,6 +39,8 @@ readmetxt="# Project Title
 gitignoretxt="__pycache__/
 .ipynb_checkpoints/
 *.egg-info
+*.egg-info/
+.DS_Store
 "
 
 setuptxt="import setuptools
