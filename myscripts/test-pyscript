@@ -1,0 +1,16 @@
+#!/bin/bash
+
+cd ~/Code/Start
+
+if [ $# -eq 0 ]; then
+	echo "Command requires at least 1 argument [testname]"
+else
+	if [ -d "$1" ]; then
+		echo "$1 dir already exists"
+	else
+		mkdir $1
+		cd $1
+		txt .
+		txt test.py
+	fi
+fi

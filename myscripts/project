@@ -36,12 +36,12 @@ readmetxt="# Project Title
 [steps]
 "
 
-gitignoretxt="
+gitignoretxt=".DS_Store
 "
 
 todotxt="- update and place name in LICENSE
 - update README.md
-- updata .gitignore if needed
+- update .gitignore if needed
 "
 
 if [ $# -eq 0 ]; then

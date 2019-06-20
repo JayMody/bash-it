@@ -11,6 +11,7 @@ else
 		touch $1
 		chmod 755 $1
 		echo "#!/bin/bash" > $1
+		myscripts
 		txt $1
 	fi
 fi

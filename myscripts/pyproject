@@ -38,6 +38,8 @@ readmetxt="# Project Title
 
 gitignoretxt="__pycache__/
 .ipynb_checkpoints/
+build/
+dist/
 *.egg-info
 *.egg-info/
 .DS_Store
