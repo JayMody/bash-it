@@ -62,24 +62,24 @@ setuptools.setup(
 )
 "
 
-todotxt="- update and place name in LICENSE
-- update README.md
-- complete setup.py
-- updata .gitignore if needed
+todotxt="\- update and place name in LICENSE
+\- update README.md
+\- complete setup.py
+\- update .gitignore if needed
 "
 
 
 if [ $# -eq 0 ]; then
-	echo "Command requires at least 1 argument [projectname][github (g)]"
+	echo "Command requires at least 1 argument [projectname][optional: github (g)]"
 else
 	mkdir $1
 	cd $1
 
-	printf "$licensetxt" > LICENSE
-	printf "$readmetxt" > README.md
-	printf "$gitignoretxt" > .gitignore
-	printf "$setuptxt" > setup.py 
-	printf "$todotxt" > TODO.txt
+	printf -- "$licensetxt" > LICENSE
+	printf -- "$readmetxt" > README.md
+	printf -- "$gitignoretxt" > .gitignore
+	printf -- "$setuptxt" > setup.py
+	printf -- "$todotxt" > TODO.txt
 
 	git init
 	git add .
