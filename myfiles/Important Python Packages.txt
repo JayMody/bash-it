@@ -1,0 +1,29 @@
+Important Python Packages
+
+//// Important ////
+- jupyter notebook
+- numpy
+- pandas
+- matplotlib
+- scipy
+- imageio
+- pillow
+- setuptools
+
+//// Machine Learning ////
+- scikit-learn
+- keras
+- tensorflow
+- pytorch
+- torchvision
+
+- scikit-image
+- opencv
+
+//// GUI ////
+- wxpython
+
+//// Data Visualizatin ////
+- plotly
+- seaborn
+- bokeh
