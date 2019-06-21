@@ -1,17 +1,26 @@
 #!/bin/bash
 
-cd ~/.bash_it/myscripts
+DIR=~/.bash_it/myscripts
+if [ -d $DIR ]; then
+	cd $DIR
+else
+	echo 'DIR does not exist'
+	exit 1
+fi
+
 
 if [ $# -eq 0 ]; then
 	echo "Command requires at least 1 argument [filename]"
+	exit 1
+fi
+
+if [ -f "$1" ]; then
+	echo "$1 script already exists"
+	exit 1
 else
-	if [ -f "$1" ]; then
-		echo "$1 script already exists"
-	else
-		touch $1
-		chmod 755 $1
-		echo "#!/bin/bash" > $1
-		myscripts
-		txt $1
-	fi
+	touch $1
+	chmod 755 $1
+	echo "#!/bin/bash" > $1
+	myscripts
+	txt $1
 fi

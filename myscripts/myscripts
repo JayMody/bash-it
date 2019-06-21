@@ -1,3 +1,10 @@
 #!/bin/bash
 
-txt ~/.bash_it/myscripts/
+DIR=~/.bash_it/myscripts
+if [ -d $DIR ]; then
+    txt $DIR
+else
+    echo 'DIR does not exist'
+    exit 1
+fi
+
