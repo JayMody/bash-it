@@ -1,0 +1,3 @@
+#!/bin/bash
+
+open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 9" --new-tab "https://github.com/new"

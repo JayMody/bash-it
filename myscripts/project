@@ -46,23 +46,25 @@ todotxt="- update and place name in LICENSE
 
 if [ $# -eq 0 ]; then
 	echo "Command requires at least 1 argument [projectname][github (g)]"
-else
-	mkdir $1
-	cd $1
-
-	printf -- "$licensetxt" > LICENSE
-	printf -- "$readmetxt" > README.md
-	printf -- "$gitignoretxt" > .gitignore
-	printf -- "$todotxt" > TODO.txt
+	exit 1
+fi
 
 
-	git init
-	git add .
-	git commit -m "initial commit"
+mkdir $1
+cd $1
 
-	open .
+printf -- "$licensetxt" > LICENSE
+printf -- "$readmetxt" > README.md
+printf -- "$gitignoretxt" > .gitignore
+printf -- "$todotxt" > TODO.txt
 
-	if [ "$2" == "g" ]; then
-		open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 9" --new-tab "https://github.com/new"
-	fi
+
+git init
+git add .
+git commit -m "initial commit"
+
+open .
+
+if [ "$2" == "g" ]; then
+	remote-git	
 fi
