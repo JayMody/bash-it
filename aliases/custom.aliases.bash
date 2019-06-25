@@ -3,12 +3,15 @@ alias salias='sublime ~/.bash_it/aliases/custom.aliases.bash'
 alias sbpf='sublime ~/.bash_profile'
 alias sbrc='sublime ~/.bashrc'
 alias bashit='cd ~/.bash_it/'
-
+alias rebash='source ~/.bash_profile'
 alias subl='sublime'
 
 alias json='function __json() { jq -C . $* | less -R; unset -f __json; }; __json'
 ##############################
 
+############ GIT ############
+alias staged='git diff --name-only --cached'
+#############################
 
 ########### CONDA ###########
 alias act='conda activate'
@@ -37,6 +40,7 @@ alias mosiac='open -n "/Applications/Google Chrome.app" --args --profile-directo
 
 # jaymody10 profile 2
 alias jay-chrome='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 2"'
+alias gcp='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 2" --new-tab "https://console.cloud.google.com/home/"'
 
 # jaykmody profile 9
 alias jkm-chrome='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 9"'
