@@ -11,6 +11,7 @@ alias json='function __json() { jq -C . $* | less -R; unset -f __json; }; __json
 
 ############ GIT ############
 alias staged='git diff --name-only --cached'
+alias unstaged='git diff --name-only'
 #############################
 
 ########### CONDA ###########
@@ -21,7 +22,7 @@ alias lse='conda info --envs'
 
 
 ########### PYTHON ###########
-alias jupy='jupyter notebook'
+alias jupy='jupyter lab'
 ##############################
 
 
@@ -54,5 +55,7 @@ alias mag-chrome='open -n "/Applications/Google Chrome.app" --args --profile-dir
 
 ############ TEMP ############
 alias mserv='ssh modyj@mserv.magarveylab.ca'
+alias mserv-startlab='jupyter lab --no-browser --port=8888'
+alias mserv-openlab='ssh -Y -N -L localhost:8888:localhost:8888 modyj@mserv.magarveylab.ca'
 ##############################
 
