@@ -1,16 +1,18 @@
 ########## SETTINGS ##########
 alias salias='sublime ~/.bash_it/aliases/custom.aliases.bash'
+alias palias='less ~/.bash_it/aliases/custom.aliases.bash'
+
 alias sbpf='sublime ~/.bash_profile'
 alias sbrc='sublime ~/.bashrc'
+
 alias bashit='cd ~/.bash_it/'
 alias rebash='source ~/.bash_profile'
-
-alias palias='less ~/.bash_it/aliases/custom.aliases.bash'
 ##############################
 
 ########## GERNERAL ##########
 alias subl='sublime'
 
+alias closewin="osascript -e 'tell application \"Finder\" to close windows'"
 alias json='function __json() { jq -C . $* | less -R; unset -f __json; }; __json'
 ##############################
 
@@ -25,6 +27,7 @@ alias cdmag='cd ~/Code/Magarvey\ Lab/'
 ############ GIT ############
 alias staged='git diff --name-only --cached'
 alias unstaged='git diff --name-only'
+alias remoteurl='git config --get remote.origin.url'
 #############################
 
 
@@ -60,16 +63,15 @@ alias jay-chrome='open -n "/Applications/Google Chrome.app" --args --profile-dir
 alias jkm-chrome='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 9"'
 alias github='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 9" --new-tab "https://github.com/"'
 
+
 # @magarveylab.ca profile 11
 alias mag-chrome='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 11"'
 alias gcp='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 11" --new-tab "https://console.cloud.google.com/home/"'
-
 ##############################
 
 
 ############ TEMP ############
 alias mserv='ssh modyj@mserv.magarveylab.ca'
-alias mserv-startlab='jupyter lab --no-browser --port=8888'
-alias mserv-openlab='ssh -Y -N -L localhost:8888:localhost:8888 modyj@mserv.magarveylab.ca'
+alias mserv-openport='ssh -Y -N -L localhost:8673:localhost:8673 modyj@mserv.magarveylab.ca'
 ##############################
 

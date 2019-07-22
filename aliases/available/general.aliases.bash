@@ -13,7 +13,7 @@ fi
 alias sl=ls
 alias la='ls -AF'       # Compact view, show hidden
 alias ll='ls -al'
-alias l='ls -a'
+alias l='ls -A1'
 alias l1='ls -1'
 
 alias _="sudo"
