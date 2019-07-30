@@ -12,22 +12,24 @@ alias rebash='source ~/.bash_profile'
 ########## GERNERAL ##########
 alias subl='sublime'
 
+alias cdir="pwd | pbcopy"
+
 alias closewin="osascript -e 'tell application \"Finder\" to close windows'"
 alias json='function __json() { jq -C . $* | less -R; unset -f __json; }; __json'
 ##############################
 
 
 ############ DIR ############
-alias cdstart='cd ~/Code/Start/'
+alias cdstart='cd ~/Code/start/'
 alias cdcode='cd ~/Code/'
-alias cdmag='cd ~/Code/Magarvey\ Lab/'
+alias cdmag='cd ~/Code/magarvey\ Lab/'
 #############################
 
 
 ############ GIT ############
 alias staged='git diff --name-only --cached'
 alias unstaged='git diff --name-only'
-alias remoteurl='git config --get remote.origin.url'
+alias remoteurl='git config --get remote.origin.url | pbcopy'
 #############################
 
 
