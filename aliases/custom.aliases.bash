@@ -70,7 +70,7 @@ alias github='open -n "/Applications/Google Chrome.app" --args --profile-directo
 # @magarveylab.ca profile 11
 alias mag-chrome='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 11"'
 alias gcp='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 11" --new-tab "https://console.cloud.google.com/home/"'
-alias sesame='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 11" --new-tab "https://drive.google.com/drive/folders/1UOeoPJQJYgYquZ8CdsDqxIFCWbzlPiyB"
+alias sesame='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 11" --new-tab "https://drive.google.com/drive/folders/1UOeoPJQJYgYquZ8CdsDqxIFCWbzlPiyB"'
 ##############################
 
 
