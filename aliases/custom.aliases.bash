@@ -23,7 +23,7 @@ alias json='function __json() { jq -C . $* | less -R; unset -f __json; }; __json
 alias cdstart='cd ~/Code/start/'
 alias cdcode='cd ~/Code/'
 alias cdmag='cd ~/Code/magarvey\ lab/'
-alias cdsesame = 'cd ~/Code/magarvey\ lab/sesame/'
+alias cdsesame='cd ~/Code/magarvey\ lab/sesame/'
 #############################
 
 
