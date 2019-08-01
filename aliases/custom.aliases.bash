@@ -22,7 +22,8 @@ alias json='function __json() { jq -C . $* | less -R; unset -f __json; }; __json
 ############ DIR ############
 alias cdstart='cd ~/Code/start/'
 alias cdcode='cd ~/Code/'
-alias cdmag='cd ~/Code/magarvey\ Lab/'
+alias cdmag='cd ~/Code/magarvey\ lab/'
+alias cdsesame = 'cd ~/Code/magarvey\ lab/sesame/'
 #############################
 
 
@@ -69,11 +70,12 @@ alias github='open -n "/Applications/Google Chrome.app" --args --profile-directo
 # @magarveylab.ca profile 11
 alias mag-chrome='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 11"'
 alias gcp='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 11" --new-tab "https://console.cloud.google.com/home/"'
+alias sesame='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 11" --new-tab "https://drive.google.com/drive/folders/1UOeoPJQJYgYquZ8CdsDqxIFCWbzlPiyB"
 ##############################
 
 
 ############ TEMP ############
 alias mserv='ssh modyj@mserv.magarveylab.ca'
-alias mserv-openport='ssh -Y -N -L localhost:8673:localhost:8673 modyj@mserv.magarveylab.ca'
+alias mserv-openport='ssh -L localhost:8673:localhost:8673 modyj@mserv.magarveylab.ca'
 ##############################
 
