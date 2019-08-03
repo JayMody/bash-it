@@ -5,7 +5,7 @@ licensetxt="MIT License
 Copyright (c) $(date +%Y) [fullname]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the \"Software\"), to deal
+of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
@@ -36,44 +36,18 @@ readmetxt="# Project Title
 [steps]
 "
 
-gitignoretxt="__pycache__/
-.ipynb_checkpoints/
-build/
-dist/
-*.egg-info
-*.egg-info/
-.DS_Store
-"
-
-setuptxt="import setuptools
-
-with open('README.md', 'r') as fh:
-	long_description = fh.read()
-
-setuptools.setup(
-	name='$1',
-	version='0.0.1',
-	author='Jay Mody',
-	author_email='JayKMody@gmail.com',
-	description='',
-	long_description = long_description,
-	long_description_content_type = 'text/markdown',
-	url='',
-	packages=setuptools.find_packages(),
-	classifiers=[]
-)
+gitignoretxt=".DS_Store
+*.xcodeproj
 "
 
 todotxt="- update LICENSE
 - update README.md
-- complete setup.py
 - update .gitignore
 "
 
-
 if [ $# -eq 0 ]; then
-	echo "Command requires at least 1 argument [projectname][optional: github (g)]"
-	exit 1
+    echo "Command requires at least 1 argument [projectname][github (g)]"
+    exit 1
 fi
 
 
@@ -83,13 +57,13 @@ cd $1
 printf -- "$licensetxt" > LICENSE
 printf -- "$readmetxt" > README.md
 printf -- "$gitignoretxt" > .gitignore
-printf -- "$setuptxt" > setup.py
 printf -- "$todotxt" > TODO.txt
+
 
 git init
 
 open .
 
 if [ "$2" == "g" ]; then
-	remote-git
+    remote-git  
 fi
