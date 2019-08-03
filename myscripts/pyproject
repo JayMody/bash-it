@@ -87,8 +87,6 @@ printf -- "$setuptxt" > setup.py
 printf -- "$todotxt" > TODO.txt
 
 git init
-git add .
-git commit -m "initial commit"
 
 open .
 
