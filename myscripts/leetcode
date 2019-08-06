@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/Code/edu/LeetCode
+cd ~/Code/projects/c++/leetcode
 
 # open leetcode.com in chrome in jkm account
 open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 9" --new-tab "https://leetcode.com/problemset/all/"

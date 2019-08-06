@@ -29,7 +29,7 @@ alias cdsesame='cd ~/Code/magarvey\ lab/sesame/'
 
 ############ GIT ############
 alias staged='git diff --name-only --cached'
-alias unstaged='git diff --name-only'
+alias unstaged='printf "\t\t__modified__\n";git diff --name-only; printf "\n\t\t__untracked__\n" ;git ls-files . --exclude-standard --others'
 alias remoteurl='git config --get remote.origin.url | pbcopy'
 #############################
 
