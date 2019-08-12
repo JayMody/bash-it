@@ -2,8 +2,9 @@
 alias salias='sublime ~/.bash_it/aliases/custom.aliases.bash'
 alias palias='less ~/.bash_it/aliases/custom.aliases.bash'
 
-alias sbpf='sublime ~/.bash_profile'
-alias sbrc='sublime ~/.bashrc'
+alias bashprofile='txt ~/.bash_profile'
+alias bashrc='txt ~/.bashrc'
+alias screenrc='txt ~/.screenrc'
 
 alias bashit='cd ~/.bash_it/'
 alias rebash='source ~/.bash_profile'

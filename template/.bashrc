@@ -4,6 +4,9 @@ case $- in
     *) return;;
 esac
 
+# Export myscripts in .bash_it
+export PATH=$PATH:~/.bash_it/myscripts
+
 # Path to the bash it configuration
 export BASH_IT="/Users/start/.bash_it"
 
