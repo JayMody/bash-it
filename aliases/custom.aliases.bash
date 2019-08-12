@@ -22,8 +22,6 @@ alias json='function __json() { jq -C . $* | less -R; unset -f __json; }; __json
 ############ DIR ############
 alias cdstart='cd ~/Code/start/'
 alias cdcode='cd ~/Code/'
-alias cdmag='cd ~/Code/magarvey\ lab/'
-alias cdsesame='cd ~/Code/magarvey\ lab/sesame/'
 #############################
 
 
@@ -65,12 +63,19 @@ alias jay-chrome='open -n "/Applications/Google Chrome.app" --args --profile-dir
 # jaykmody profile 9
 alias jkm-chrome='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 9"'
 alias github='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 9" --new-tab "https://github.com/"'
+##############################
 
 
+######### MAGARVEY ###########
 # @magarveylab.ca profile 11
 alias mag-chrome='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 11"'
 alias gcp='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 11" --new-tab "https://console.cloud.google.com/home/"'
 alias sesame='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 11" --new-tab "https://drive.google.com/drive/folders/1UOeoPJQJYgYquZ8CdsDqxIFCWbzlPiyB"'
+
+alias cdmag='cd ~/Code/magarvey\ lab/'
+alias cdsesame='cd ~/Code/magarvey\ lab/sesame/'
+
+alias sesame-vm='gcloud compute ssh --project magarvey-dl --zone us-central1-a sesame-vm -- -L localhost:7001:localhost:7001'
 ##############################
 
 
