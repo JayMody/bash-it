@@ -1,5 +1,6 @@
 ########## SETTINGS ##########
-alias salias='sublime ~/.bash_it/aliases/custom.aliases.bash'
+alias galias='txt ~/.bash_it/aliases/available/general.aliases.bash'
+alias salias='txt ~/.bash_it/aliases/custom.aliases.bash'
 alias palias='less ~/.bash_it/aliases/custom.aliases.bash'
 
 alias bashprofile='txt ~/.bash_profile'
@@ -76,12 +77,12 @@ alias sesame='open -n "/Applications/Google Chrome.app" --args --profile-directo
 alias cdmag='cd ~/Code/magarvey\ lab/'
 alias cdsesame='cd ~/Code/magarvey\ lab/sesame/'
 
-alias sesame-vm='gcloud compute ssh --project magarvey-dl --zone us-central1-a sesame-vm -- -L localhost:7001:localhost:7001'
+alias sesame-vm='gcloud compute ssh --project magarvey-dl --zone us-central1-a sesame-vm'
+alias sesame-vm-openport='gcloud compute ssh --project magarvey-dl --zone us-central1-a sesame-vm -- -L localhost:7001:localhost:7001'
 ##############################
 
 
 ############ TEMP ############
 alias mserv='ssh modyj@mserv.magarveylab.ca'
-alias mserv-openport='ssh -L localhost:8673:localhost:8673 modyj@mserv.magarveylab.ca'
 ##############################
 

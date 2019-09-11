@@ -36,13 +36,16 @@ readmetxt="# Project Title
 [steps]
 "
 
-gitignoretxt="__pycache__/
+gitignoretxt=".DS_Store
+.vscode
+
+.pylintrc
+__pycache__/
 .ipynb_checkpoints/
 build/
 dist/
 *.egg-info
 *.egg-info/
-.DS_Store
 "
 
 setuptxt="import setuptools

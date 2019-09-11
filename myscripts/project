@@ -37,6 +37,7 @@ readmetxt="# Project Title
 "
 
 gitignoretxt=".DS_Store
+.vscode
 "
 
 todotxt="- update LICENSE
