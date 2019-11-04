@@ -21,6 +21,12 @@ alias json='function __json() { jq -C . $* | less -R; unset -f __json; }; __json
 ##############################
 
 
+############ CODE ############
+alias g++='g++ -std=c++11'
+alias gccerr='gcc -ansi -Wall -Werror'
+##############################
+
+
 ############ DIR ############
 alias cdstart='cd ~/Code/start/'
 alias cdcode='cd ~/Code/'
@@ -42,7 +48,8 @@ alias lse='conda info --envs'
 
 
 ########### PYTHON ###########
-alias jupy='jupyter lab'
+alias jupy='jupyter notebook'
+alias jlab='jupyter lab'
 ##############################
 
 
@@ -51,8 +58,6 @@ alias incognito='open -n "/Applications/Google Chrome.app" --args --incognito'
 
 # jaymsyndicate profile 10
 alias syn-chrome='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 10"'
-alias youtube='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 10" --new-tab "youtube.com"'
-alias keep='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 10" --new-tab "https://keep.google.com/"'
 
 # @mcmaster profile 3
 alias mac-chrome='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 3"'
@@ -63,8 +68,10 @@ alias mosiac='open -n "/Applications/Google Chrome.app" --args --profile-directo
 alias jay-chrome='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 2"'
 
 # jaykmody profile 9
-alias jkm-chrome='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 9"'
+alias chrome='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 9"'
 alias github='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 9" --new-tab "https://github.com/"'
+alias youtube='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 9" --new-tab "youtube.com"'
+alias keep='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 9" --new-tab "https://keep.google.com/"'
 ##############################
 
 
@@ -72,7 +79,7 @@ alias github='open -n "/Applications/Google Chrome.app" --args --profile-directo
 # @magarveylab.ca profile 11
 alias mag-chrome='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 11"'
 alias gcp='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 11" --new-tab "https://console.cloud.google.com/home/"'
-alias sesame='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 11" --new-tab "https://drive.google.com/drive/folders/1UOeoPJQJYgYquZ8CdsDqxIFCWbzlPiyB"'
+alias colab='open -n "/Applications/Google Chrome.app" --args --profile-directory="Profile 11" --new-tab "https://drive.google.com/drive/folders/1UOeoPJQJYgYquZ8CdsDqxIFCWbzlPiyB"'
 
 alias cdmag='cd ~/Code/magarvey\ lab/'
 alias cdsesame='cd ~/Code/magarvey\ lab/sesame/'
@@ -86,3 +93,8 @@ alias sesame-vm-openport='gcloud compute ssh --project magarvey-dl --zone us-cen
 alias mserv='ssh modyj@mserv.magarveylab.ca'
 ##############################
 
+
+############ TEMP ############
+alias moore='ssh -X modyj@moore.mcmaster.ca'
+alias cdvalerie='cd /Users/start/Code/projects/python/valerie'
+##############################
