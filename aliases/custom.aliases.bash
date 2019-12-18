@@ -30,6 +30,13 @@ alias gccerr='gcc -ansi -Wall -Werror'
 ############ DIR ############
 alias cdstart='cd ~/Code/start/'
 alias cdcode='cd ~/Code/'
+alias school='open ~/Documents/School/Year\ 2'
+#############################
+
+
+########## DOCKER ###########
+alias docker-shellinit='eval "$(docker-machine env default)"'
+alias docker-ex='docker ps --filter "status=exited"'
 #############################
 
 
@@ -95,6 +102,7 @@ alias mserv='ssh modyj@mserv.magarveylab.ca'
 
 
 ############ TEMP ############
+alias valerievm='gcloud compute ssh jaykmody@instance-1-vm --zone=us-central1-a'
 alias moore='ssh -X modyj@moore.mcmaster.ca'
 alias cdvalerie='cd /Users/start/Code/projects/python/valerie'
 ##############################
