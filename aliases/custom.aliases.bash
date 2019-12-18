@@ -14,6 +14,7 @@ alias rebash='source ~/.bash_profile'
 ########## GERNERAL ##########
 alias subl='sublime'
 
+alias duh="du -sh * | sort -rh"
 alias cdir="pwd | pbcopy"
 
 alias closewin="osascript -e 'tell application \"Finder\" to close windows'"
